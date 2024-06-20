@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Background</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        body {
+            font-family: 'MV BOLI';
+            font-size: 1.5rem;
+            background: url('./images/bacground.png') no-repeat 0 0 / cover;
+            
+        }
+        h1.title {
+            font-family: sans-serif;
+            text-align: center;
+            color:steelblue;
+            margin: 20px;
+            text-shadow: 5px 5px 5px gray;
+        }
+        p {
+            color:indigo;
+        }
+        div {
+            position:relative;
+            width: 600px;
+            height: 300px;
+            font-family: Arial, Helvetica, sans-serif;
+            border:1px solid blue;
+            background: url('./images/bacground-2.png') no-repeat center  / cover;
+            margin:auto;
+        }
+        .btn {
+            display: block;
+            outline:none;
+            border:none;
+            background-color: orange;
+            box-shadow:inset 1px 1px 5px  gray,
+                             1px 1px 5px  gray ;
+            font-size: 1.5rem;
+            padding:12px 24px;
+            border-radius:20px;
+            position:absolute;
+            top: 30%;
+            left: 50%;
+            transform:translate(-50%,-50%);
+            cursor: pointer;
+        }
+        .btn:hover {
+            box-shadow: inset 2px 2px 5px gray;
+            color:white;
+        }
+        div p {
+            transform:translateY(130px);
+            text-indent: 40px;
+            text-align: justify;
+            padding:15px;
+            color:blue;
+        }
+        ul {
+            margin:10px 0;
+        }
+        ul li { 
+            list-style: none;
+            margin-left: 30px;
+        }
+        ul li::before {
+            content :'❤️';
+        }
+        ul li span {
+            background: cyan;
+        }
+    </style>
+</head>
+<body>
+    <h1 class="title">Background</h1>
+    <p>  background: url('./images/bacground-2.png') no-repeat center  / cover;
+        <ul>
+            <li><span>no-repeat</span> - да не се повтаря изображението ако е по-малко от фона; </li>
+            <li><span>0 0</span> - координати по Х и У от горния ляв ъгъл, напр. при 50px 80px, то ще бъде 50px надясно и 80px надолу 
+            вместо 0 0, което е top left, може: top center, top right, center и т.н.( в примера е center); </li>
+            <li><span>cover или 100% 100%</span> - показва разпъване или  свиване на изображението до размерите на фона; </li>
+    </ul>
+    </p>
+    <div>
+        <button class="btn">Поръчай</button>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae magnam molestias omnis blanditiis cum maiores dolores quasi assumenda! Ipsa, molestiae.</p>
+    </div>
+    <p>Lorem ipsum dolor sit amet.</p>
+    <p>Lorem ipsum dolor sit amet.</p>
+</body>
+</html>

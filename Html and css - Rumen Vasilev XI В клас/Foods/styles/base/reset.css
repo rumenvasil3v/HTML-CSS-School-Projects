@@ -1,0 +1,20 @@
+html {
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+*, *::after, *::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+img {
+    display: block;
+    height: auto;
+    width: 100%;
+}
+
+body {
+    scroll-behavior: smooth;
+}

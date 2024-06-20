@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=\, initial-scale=1.0">
+    <title>Order</title>
+    <link rel="stylesheet" href="styles/pages/order.css">
+</head>
+<body>
+    <header class="site-header">
+        <p class="site-title">
+            <a href="index.html"><img src="pic/logo.png" alt="Food Logo"></a>
+        </p>
+
+        <nav>
+            <ul class="navigation">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="menu.html">Menu</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="review.html">Review</a></li>
+                <li><a href="order.html">Order</a></li>
+            </ul>
+        </nav>
+
+        <div class="icons">
+            <i class="fa-solid fa-magnifying-glass"></i>
+            <i class="fa-solid fa-heart"></i>
+            <i class="fa-solid fa-cart-shopping"></i>
+        </div>
+    </header>
+
+    <section class="order-now-section">
+        <h1><span class="order">Order</span> Now</h1>
+
+        <div class="order-info">
+            <div class="media">
+                <img src="pic/order_image.png" alt="">
+            </div>
+
+            <form action="#" id="order-form">
+                <div class="wrapper-form">
+                    <div class="first-container-form">
+                        <div class="form-container">
+                            <label for="first-name">Name</label>
+                            <input type="text" placeholder="Your Name" name="first-name" id="first-name" required class="input-element">
+                        </div>
+
+                        <div class="form-container">
+                            <label for="email-adress">Email</label>
+                            <input type="email" placeholder="Your Email" name="email-adress" id="email-adress" required class="input-element">
+                        </div>
+
+                        <div class="form-container">
+                            <label for="phone-number">Number</label>
+                            <input type="tel" placeholder="Your Number" name="phone-number" id="phone-number" required class="input-element">
+                        </div>
+                    </div>
+
+                    <div class="second-container-form">
+                        <div class="form-container">
+                            <label for="adress-field">Adress:</label>
+                            <input type="text" placeholder="Your Adress" name="adress" id="adress-field" required class="input-element">
+                        </div>
+
+                        <div class="form-container">
+                            <label for="work-mobile">Work Phone:</label>
+                            <input type="tel" placeholder="Your Work Mobile Phone" name="work-mobile" id="work-mobile" class="input-element">
+                        </div>
+
+                        <div class="form-container">
+                            <label for="products">Products:</label>
+                            <select name="choose-product" id="products" class="input-element">
+                                <option value="">Choose your product</option>
+                                <option value="burger">Burger</option>
+                                <option value="pancakes">Pancake</option>
+                                <option value="pizza">Pizza</option>
+                                <option value="duner">Duner</option>
+                                <option value="risotto">Risotto</option>
+                                <option value="pasta">Pasta</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+
+                <input type="submit" value="Order Now" class="order-now-button">
+            </form>
+        </div>
+    </section>
+</body>
+</html>

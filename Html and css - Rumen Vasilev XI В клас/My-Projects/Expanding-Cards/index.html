@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Expanding Flex Cards</title>
+
+    <style>
+    * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+    }
+
+    body {
+        background: url('https://images.unsplash.com/photo-1708169542550-f627d8a4bd26?q=80&w=2670&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-color: rgb(238, 238, 238);
+        padding: 2em;
+        flex-direction: column;
+        display: flex;
+        align-items: center;
+        min-height: 100vh;
+        justify-content: center;
+    }
+
+    img {
+        display: block;
+        height: auto;
+        width: 100%;
+    }
+
+    .container {
+        display: flex;
+        flex-direction: row;
+        gap: 3em;
+    }
+
+    .card {
+        flex: 0 0 6em;
+        width: 6em;
+        height: 40em;
+        overflow: hidden;
+        position: relative;
+        border-radius: 0.5em;
+        box-shadow: 0px 0px 19px 1px rgba(0, 0, 0, 0.5);
+        transition: all 0.2s ease-in-out;
+    }
+
+    .card img {
+        height: 100%;
+        width: auto;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    .card:hover {
+        flex: 0 0 50em;
+    }
+
+    .card:nth-child(2),
+    .card:nth-child(4) {
+           margin-top: 10em;
+    }
+
+    </style>
+</head>
+<body>
+    <section class="container">
+        <div class="card"><img src="images/Image1.jpg" alt="" class="image first"></div>
+        <div class="card"><img src="images/Image2.jpg" alt="" class="image second"></div>
+        <div class="card"><img src="images/Image3.jpg" alt="" class="image third"></div>
+        <div class="card"><img src="images/Image4.jpg" alt="" class="image fourth"></div>
+    </section>
+</body>
+</html>

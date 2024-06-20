@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <style>
+        label {
+            display: inline-block;
+            min-width: 140px;
+        }
+        
+    </style>
+</head>
+<body>
+    <h1 align = "center" style = "color: #ff7f50;">F O R M S</h1>
+   
+    <form action = "const.html">
+        <label for = "user">User:</label>
+        <input type = "text" id = "user" required placeholder="Enter username">
+        <br><br>
+        <label for="password">Password:</label>
+        <input type = "password" id = "password" required placeholder="Enter password">
+        <br><br>
+        <label for="password">Email:</label>
+        <input type = "email" id = "password" placeholder="Enter email">
+        <br><br>
+        <label for = "fav-color">Favorite Color:</label>
+        <input type="color">
+        <br><br>
+        <label for = "gender">Gender:</label>
+        <input type="radio" name="sex" id="gender">Male
+        <input type="radio" name="sex" id="gender">Female
+        <input type="radio" name="sex" if="gender" disabled>Gender
+        <br><br>
+        <label for = "favorite-fruit">Favorite fruit:</label>
+        <input type="checkbox" >Banana
+        <input type="checkbox" > Orange
+        <input type="checkbox" > Kiwi
+        <input type="checkbox" > Pineapple
+        <input type="checkbox" > Apple
+        <br><br>
+        <label for = "choose-date">Choose date:</label>
+        <input type="date">
+        <br><br>
+        <label for = "choose-car">Choose your car:</label>
+        <select>
+            <option value="bmw" selected></option>
+            <option value="bmw">BMW</option>
+            <option value="subaru">Subaru</option>
+            <option value="golf">Golf</option>
+            <option value="mercedes">Mercedes</option>
+        </select>
+        <br><br>
+        <label for = "choose-file">Choose file:</label>
+        <input type="file">
+        <br><br>
+        <label for = "choose-file">Choose number:</label>
+        <input type="number" value = "0" min = "0" max = "100" step = "10">
+        <br><br>
+        <input type="submit" value="Submit">
+        <input type="reset" value="Clear">
+
+<div>
+    <input type ="range" min = "1" max = "100" class = "slider" value = "50" id = "myRange">
+    <p>Value: <span id = "demo"></span></p>
+</div>
+
+        <script>
+            var slider = document.getElementById("myRange");
+            var output = document.getElementById("demo");
+            output.innerHTML = slider.value;
+
+            slider.oninput = function() {
+                output.innerHTML = this.value;
+            }
+        </script>
+    </form>
+
+    <a href = "index.html" style = "font-size: 20px">Go to Home Page</a>
+    <br><br>
+    <a href = "page-1.html" style = "font-size: 20px">Go to Page-1</a>
+    <br><br>
+    <a href = "page-2.html" style = "font-size: 20px">Go to Page-2</a>
+    <br><br>
+    <a href = "list.html" style = "font-size: 20px">Go to Page-3</a>  
+    <br><br>                                                         
+    <a href = "tables.html" style = "font-size: 20px">Go to Tables</a>   
+    <br><br>    
+    <a href = "audio-video.html" style = "font-size: 20px;">Go to Audio and Video</a>     
+    <br><br>    
+    <a href = "forms.html" style = "font-size: 20px;">Go to Forms</a>     
+</body>
+</html>

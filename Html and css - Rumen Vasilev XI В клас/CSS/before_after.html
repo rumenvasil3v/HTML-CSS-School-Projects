@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS-type</title>
+    <style>
+        body {
+            font-family: 'MV BOLI';
+            font-size: 1.5rem;
+        }
+        h1.title {
+            width: 600px;
+            font-family: sans-serif;
+            text-align: center;
+            color:steelblue;
+            position:relative;
+        }
+        h1::before {
+            content :'❤️';
+            position:absolute;
+            left: 70px;
+            top: 25px;
+        }
+        h1::after {
+            content :'❤️';
+            position:absolute;
+            right: 70px;
+            top: -25px;
+        }
+        p {
+            color:green;
+            
+        }
+        
+    </style>
+</head>
+<body>
+    <h1 class="title">Before & After
+
+    </h1>
+    <p>Lorem ipsum dolor sit amet.Lorem ipsum dolor sit amet.</p>
+   
+</body>
+</html>

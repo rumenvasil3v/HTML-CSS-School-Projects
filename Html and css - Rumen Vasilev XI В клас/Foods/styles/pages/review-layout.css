@@ -1,0 +1,91 @@
+body {
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+}
+
+.review-list {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 2em;
+    gap: 6em;
+    justify-content: center;
+}
+
+.card {
+    flex: 0 0 20em;
+    display: flex;
+    flex-direction: column;
+    gap: 4em;
+    box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.3);
+    padding: 0.5em 1em;
+    width: 108.5em;
+}
+
+.media {
+    padding: 1em;
+}
+
+.card-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.6em;
+}
+
+.card-content p {
+    text-align: justify;
+    padding: 0;
+}
+
+.card-content h2 {
+    margin: 0;
+    padding: 0;
+    color: #FFAE09;
+}
+
+.fa-solid.fa-star,
+.fa-solid.fa-star-half-stroke {
+    color: #FAC032;
+}
+
+.media img {
+    border-radius: 50%;
+    border: 5px solid #B1B1B1;
+    padding: 0.2em;
+}
+
+.icons {
+    display: flex;
+    gap: 0.5em;
+}
+
+.fa-brands {
+    font-size: 1.3em;
+}
+
+.review {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.header-review {
+    color: #FFAE09;
+    font-weight: bold;
+    font-family: "Caveat", cursive;
+    font-size: 1.5em;
+}
+
+.media {
+    transition: all 0.4s ease-in;
+    height: 208px;
+}
+
+.media:hover {
+    margin-top: -50px;
+}
+
+.media:hover .card-content {
+    margin-top: auto;
+}

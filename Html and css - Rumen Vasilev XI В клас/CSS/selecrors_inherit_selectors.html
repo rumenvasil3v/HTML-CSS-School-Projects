@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS-class</title>
+    <style>
+        body {
+            font-family: 'MV BOLI';
+            font-size: 1.5rem;
+        }
+        h1.title {
+            font-family: sans-serif;
+            text-align: center;
+            color:steelblue;
+        }
+        p {
+            color:green;
+        }
+        div {
+            font-family: Arial, Helvetica, sans-serif;
+            background: transparent;
+            border: solid 1px;
+        }
+        div p {
+            background: cyan;
+        }
+        div>p {
+            background:yellow;
+        }
+        .first {
+            color:blue;
+            background-color: tomato;
+        }
+
+        div+p {
+            color: wheat;
+        }
+    </style>
+</head>
+<body>
+    <h1 class="title">INHERIT Selectors</h1>
+    <p>Lorem ipsum dolor sit amet.</p>
+    <p class="first">Lorem ipsum dolor sit amet.</p>
+    <div>
+        <p>Lorem ipsum dolor sit amet.</p>
+            <section>
+                <p>Lorem ipsum dolor sit amet.</p>
+                <p>Lorem ipsum dolor sit amet.</p>
+            </section>
+        <p>Lorem ipsum dolor sit amet.</p>
+        <p class="first">Lorem ipsum dolor sit amet.</p>
+    </div>
+    <p>Lorem ipsum dolor sit amet.</p>
+    <p>Lorem ipsum dolor sit amet.</p>
+</body>
+</html>

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS-type</title>
+    <style>
+        body {
+            font-family: 'MV BOLI';
+            font-size: 1.5rem;
+        }
+        h1.title {
+            font-family: sans-serif;
+            text-align: center;
+            color:steelblue;
+        }
+        p {
+            color:green;
+        }
+        input {
+            min-width:300px;
+            display: block;
+            padding:12px 6px;
+            font-size: 1.2rem;
+        }
+        input[type='password']{
+            background:rgb(236, 235, 235);
+        }
+        input:focus {
+            border:3px solid blue;
+        }
+    </style>
+</head>
+<body>
+    <h1 class="title">ФОРМУЛЯРИ</h1>
+    <p>Lorem ipsum dolor sit amet.</p>
+    <p>Lorem ipsum dolor sit amet.</p>
+    <form action="">
+        <div>   
+            <label >Name:</label>
+            <input type="text" placeholder="Your Name">
+        </div>
+        <div>   
+            <label >Email:</label>
+            <input type="email" placeholder="Your Email">
+        </div>
+        <div>   
+            <label >Password:</label>
+            <input type="password" placeholder="Enter Password">
+        </div>
+
+    </form>
+
+</body>
+</html>

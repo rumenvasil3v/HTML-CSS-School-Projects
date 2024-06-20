@@ -1,0 +1,61 @@
+html,body {
+    font-size: 20px;     
+}
+
+p {
+     font-size: 20px;
+     color: red;
+ }
+
+ h2.color {
+    text-transform: uppercase;
+    color: blue;
+    text-align: center;
+}
+
+ .color {
+     font-size: 20px;
+     color: orange;
+ }
+
+ .colorOr {
+     color: rgb(236, 187, 96);
+     font-size: 20px;
+ }
+
+ .colorOr {
+     color: rgb(236, 187, 96);
+     font-size: 30px;
+ }
+
+ .sp {
+     text-decoration: line-through;
+     color: red;
+     background-color: blue;
+     font-size: 2rem;
+ }
+
+ .my {
+     color: magenta;
+ }
+
+ .first {
+     width: 20%;
+    background-color: cyan;
+    text-transform: uppercase;
+    color: brown;
+    border: 2px solid blue;
+}
+
+
+ .first p {
+    width: 90%;
+     background-color: cyan;
+     text-transform: uppercase;
+     color: brown;
+     border: 2px solid blue;
+ }
+
+ mark {
+     background: aqua;
+ }

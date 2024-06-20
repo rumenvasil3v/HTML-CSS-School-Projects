@@ -1,0 +1,18 @@
+.navigation {
+    display: flex;
+}
+
+.navigation li {
+    list-style: none outside;
+    padding-inline-end: 3em;
+}
+
+.navigation li a {
+    text-decoration: none;
+    color: #000;
+    transition: all 0.1s ease-in;
+}
+
+.navigation li a:hover {
+    color: #FFAE09;
+}

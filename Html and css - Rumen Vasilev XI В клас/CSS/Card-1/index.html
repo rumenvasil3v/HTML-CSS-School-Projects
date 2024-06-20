@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Card</title>
+    <style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+        body {
+            font-size: 20px;
+        }
+
+        .container {
+            display: flex;
+            justify-content: center;
+        }
+
+        .card {
+            width: 350px;
+            /* box-shadow: 6px 6px 13px grey; */
+            box-shadow: 0px 5px 10px 10px rgba(0, 0, 0, 0.2);
+            text-align: center;
+            margin: 100px auto;
+            padding:15px;
+            border-radius: 20px;
+        }
+
+        .picture {
+            height: 300px;
+            width: 300px;
+        }
+
+        .pic {
+           width: 100%;
+        }
+
+        .card-text p {
+            text-align: justify;
+            text-indent: 10px;
+            margin-top: 10px;
+            margin-bottom: 20px;
+            margin-right: 10px;
+            margin-left: 10px;
+        }
+
+        .price {
+            display: flex;
+            justify-content: center;
+            /* align-items: center; */
+        }
+
+        .price p {
+            text-decoration:line-through;
+        }
+
+        .price h2 {
+            color:  wheat;
+        }
+
+        button {
+            display:block;
+            width: 100%;
+            padding: 15px 0;
+            border: none;
+            background-color:orange;
+            border-radius:12px;
+            color:white;
+            cursor:pointer;
+            transition: all 0.5s;
+            font-size: inherit;
+            margin-bottom: 10px;
+        }
+
+        button:hover {
+            color: rgb(204, 149, 77);
+            background-color: brown;
+        }
+
+        h1.title {
+        color: wheat;
+        text-align: center;
+        text-shadow: 7px 3px 7px gray;
+        }
+
+        h3 {
+            text-align: center;
+            color: blue;
+            font-size: inherit;
+        }
+    </style>
+</head>
+<body>
+    <h1 class ="title">П Л О Д О В Е</h1>
+    <div class="container">
+    <div class="card">
+        <div class="picture">
+            <img class="pic" src="pictures/red-apple.jpg"
+                 onmouseover="this.src = 'pictures/red-apple-1.1-removebg-preview.png'"
+                 onmouseout="this.src = 'pictures/red-apple-removebg-preview.png'">
+        </div>
+
+        <div class="card-text">
+            <h3>Ябълки</h3>
+            <div class="price">
+                <h2>0.99 лв.</h2>
+                <p>1.60 лв.</p>
+            </div>
+
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint obcaecati explicabo blanditiis quasi, ad harum, molestias, voluptate odit iure sit sapiente natus accusamus odio earum iusto delectus asperiores reiciendis vel?</p>
+            
+        </div>
+        <button>Order</button>
+        </div>
+        
+        <div class="card">
+            <div class="picture">
+                <img class="pic" src="pictures/red-apple.jpg"
+                     onmouseover="this.src = 'pictures/red-apple-1.1.jpg'"
+                     onmouseout="this.src = 'pictures/red-apple.jpg'">
+            </div>
+    
+            <div class="card-text">
+               <h3>Ябълки</h3>
+                <div class="price">
+                    <h2>0.99 лв.</h2>
+                    <p>1.60 лв.</p>
+                </div>
+    
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint obcaecati explicabo blanditiis quasi, ad harum, molestias, voluptate odit iure sit sapiente natus accusamus odio earum iusto delectus asperiores reiciendis vel?</p>
+                
+            </div>
+            <button>Order</button>
+            
+        </div>
+        <div class="card">
+            <div class="picture">
+                <img class="pic" src="pictures/red-apple.jpg"
+                     onmouseover="this.src = 'pictures/red-apple-1.1.jpg'"
+                     onmouseout="this.src = 'pictures/red-apple.jpg'">
+            </div>
+    
+            <div class="card-text">
+                <h3>Ябълки</h3>
+                <div class="price">
+                    <h2>0.99 лв.</h2>
+                    <p>1.60 лв.</p>
+                </div>
+    
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint obcaecati explicabo blanditiis quasi, ad harum, molestias, voluptate odit iure sit sapiente natus accusamus odio earum iusto delectus asperiores reiciendis vel?</p>
+                
+            </div>
+    
+            <button>Order</button>
+        </div>
+    </div>
+</div>
+</body>
+</html>

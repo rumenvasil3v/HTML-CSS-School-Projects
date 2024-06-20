@@ -1,0 +1,26 @@
+.site-header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding-block-start: 1em;
+    box-shadow: 0 0 19px 1px rgba(0, 0, 0, 0.5);
+}
+
+.site-header .icons {
+    display: flex;
+    gap: 1em;
+}
+
+.site-header .icons .fa-solid {
+   font-size: 1.5em;
+   transition: all 0.1s ease-in;
+}
+
+.site-header .icons .fa-solid:hover {
+    color: #FFAE09;
+    cursor: pointer;
+ }
+
+.site-title {
+    flex: 0 0 6em;
+}

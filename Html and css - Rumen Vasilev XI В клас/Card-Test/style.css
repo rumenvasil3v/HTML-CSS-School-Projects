@@ -1,0 +1,116 @@
+.card {
+    border: 1px solid black;
+    width: 500px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: none;
+    border-radius: 12px;
+    box-shadow: 6px 6px 15px rgba(0, 0, 0, 0.4);
+}
+
+.card-background {
+    width: 100%;
+    background-color: blue;    
+    display: flex;
+    justify-content: space-between;
+    height: 150px;
+    position: relative;
+    border-radius: 12px 12px 0 0;;
+}
+
+.text {
+    font-family: 'Roboto', sans-serif;
+    color: rgb(100,100,100);
+}
+
+.icons {
+    margin-top: 20px;
+    display: block;
+    transform: translate(-50%, 0%);
+}
+
+.card-background img {
+    height: 120px;
+    width: 120px;  
+    border-radius: 50%;
+    border: 5px solid blue;
+    padding: 5px;
+    background-color: white;
+    margin-top: 30px;
+    margin-left: 180px;
+    cursor: grab;
+}
+
+.text h1 {
+    font-size: 1.6rem;
+    text-align: center;
+}
+
+.text h2 {
+    font-size: 1.2rem;
+    text-align: center;
+}
+
+.checked {
+    color: blue;
+}
+
+.white {
+    color: orange;
+}
+
+.far {
+    color: blue;
+}
+
+.stars {
+    display:flex;
+    width: 10px;
+    margin: 0px auto;
+    justify-content: space-evenly;
+}
+
+.about-me {
+    padding: 5px 40px;
+    margin-left: 80px;
+    color: white;
+    background-color: blue;
+    border: none;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+.about-me:hover {
+    transition: 0.2s;
+    background-color: rgb(10, 10, 136);
+}
+
+.follow-me:hover {
+    transition: 0.2s;
+    background-color: rgb(10, 10, 136);
+}
+
+.follow-me {
+    padding: 8px 40px;
+    margin-right: 80px;
+    color: white;
+    background-color: blue;
+    border: none;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+.myButtons {
+    margin: 0px auto;
+    display:flex;
+    justify-content: space-around;
+    margin-bottom: 20px;
+}
+
+.icon:hover {
+   transition: all .5s ease;
+   fill:rgb(10, 10, 136);
+   cursor: pointer;
+}

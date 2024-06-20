@@ -1,0 +1,90 @@
+body {
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+    background-image: url('../../pic/bg2.jpg');
+    background-position-x: 19em;
+}
+
+.order-now-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.order-info {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.media {
+    flex: 0 0 32%;
+}
+
+.first-container-form,
+.second-container-form,
+.form-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.first-container-form,
+.second-container-form {
+    gap: 2em;
+}
+
+.form-container {
+    gap: 0.1em;
+}
+
+.input-element {
+    width: 16em;
+    padding: 0.5em 0.4em;
+    background-color: #D3D3D3;
+    border: 1px solid rgb(161, 158, 158);
+    border-radius: 0.1em;
+}
+
+.input-element::placeholder {
+    color: rgb(161, 158, 158);
+}
+
+#products {
+    height: 38.2px;
+    width: 224px;
+}
+
+.wrapper-form {
+    display: flex;
+    gap: 5em;
+}
+
+.order-now-button {
+    background-color: #000;
+    color: #fff;
+    padding: 0.4em 1em;
+    border: none;
+    cursor: pointer;
+}
+
+#order-form {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 5em;
+}
+
+.order {
+    color: #FAC031;
+    font-family: "Caveat", cursive;
+    font-size: 1.4em;
+    display: inline-block;
+    margin-inline-end: 0.2em;
+}
+
+.order-now-section h1 {
+    margin: 0;
+    padding: 0;
+}

@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
+        @import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css');
+
+        *, *::before, *::after {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            box-sizing: inherit;
+            font: 16px/1.5 "Lato", sans-serif; 
+        }
+
+        body {
+            font: inherit;
+            background-color: lavender;
+            min-height: 100vh;
+            /* padding: 1em; */
+        }
+
+        img {
+            width: 100%;
+            display: block;
+            height: auto;
+        }
+
+        a {
+            text-decoration: none;
+            color: #000;
+            font-size: 1.2em;
+            transition: all 0.2s ease-in-out;
+        }
+
+        i {
+            transition: all 0.2s ease-in-out;
+        }
+
+        a:hover,
+        a:hover i {
+            color: #fca006;
+        }
+
+        .container {
+            /* max-width: 80vw; */
+            /* margin: 0 auto; */
+            display: flex;
+            flex-direction: column;
+            gap: 2em;
+        }
+
+        .site-header {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            /* margin-top: 1em; */
+            align-items: center;
+            padding: 0.3em;
+            box-shadow: 0px 0px 19px 2px rgb(0, 0, 0, 1);
+        }
+
+        .site-header .site-logo {
+            max-width: 6em;
+        }
+
+        .navigation ul {
+            display: flex;
+            flex-direction: row;
+            /* border: 2px solid black; */
+            width: 25em;
+            justify-content: space-between;
+        }
+
+        .navigation ul li {
+            display: flex;
+        }
+
+        .icons-wrapper {
+            /* border: 2px solid black; */
+            display: flex;
+            flex-direction: row;
+            gap: 1.6em;
+        }
+
+        .icons-wrapper i {
+            font-size: 1.2em;
+            color: rgb(121, 120, 120);
+        }
+
+        .main-header {
+            color: rgb(255, 157, 0);
+        }
+
+        .site-main {
+            display: flex;
+            flex-direction: column;
+            gap: 1em;
+            padding: 0em 3em;
+        }
+
+        .site-main header h1 {
+            text-align: center;
+            color: blue;
+        }
+
+        .site-main section {
+            border: 3px dotted blue;
+            display: flex;
+            gap: 1.4em;
+            padding: 2em;
+            border-radius: 0.9em;
+        }
+
+        .site-main section:nth-child(2) {
+            display: flex;
+            flex-direction: row-reverse;
+            gap: 1.4em;
+            padding: 2em;
+        }
+
+        .site-main section img {
+            width: 40em;
+        }
+
+        .text {
+            text-align: justify;
+            
+        } 
+
+        .site-footer {
+            background-color: #193047;
+            margin-top: auto;
+            color: #fff;
+            display: flex;
+            flex-direction: row;
+            padding: 2em;
+            gap: 2.7em;
+            justify-content: space-between;
+            align-items: flex-start;
+        }
+
+        .site-footer a {
+            color: #fff;
+        }
+
+        .site-footer a:hover {
+            text-decoration: underline;
+        }
+
+        .site-footer article {
+            display: flex;
+            flex-direction: column;
+            flex: 0 0 16em;
+            gap: 1em;
+        }
+
+        .site-footer .paragraphs-wrapper {
+            display: flex;
+            flex-direction: column;
+            gap: 0.9em;
+        } 
+
+        .footer-icons-wrapper {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+            width: 15em;
+            /* border: 2px solid black; */
+        }
+
+        .footer-payment-media {
+            display: flex;
+            flex-direction: row;
+            gap: 1em;
+            width: 7em;
+        }
+
+        .site-version,
+        .site-creation {
+            color: #6a6a6a;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header class="site-header">
+            <p class="site-logo">
+                <a href="#"><img src="pict/logo_book.png" alt=""></a>
+            </p>
+
+            <nav class="navigation">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="about.html">About</a></li>
+                </ul>
+            </nav>
+
+            <div class="icons-wrapper">
+                <a href="#"><i class="fa-solid fa-magnifying-glass"></i></a>
+                <a href="#"><i class="fa-solid fa-heart"></i></a>
+                <a href="#"><i class="fa-solid fa-cart-shopping"></i></a>
+            </div>
+        </header>
+
+        <main class="site-main">
+            <header>
+                <h1>Welcome to <span class="main-header">Our Page</span></h1>
+            </header>
+
+            <section>
+                <img src="pict/undraw_software_engineer.svg" alt="">
+                <p class="text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Qui delectus voluptatem impedit et hic ipsa quod possimus quia ut, explicabo omnis animi minima. Voluptate distinctio ducimus nostrum cupiditate doloribus rem?Lorem ipsum dolor sit amet consectetur, adipisicing elit. Qui delectus voluptatem impedit et hic ipsa quod possimus quia ut, explicabo omnis animi minima. Voluptate distinctio ducimus nostrum cupiditate doloribus rem?Lorem ipsum dolor sit amet consectetur, adipisicing elit. Qui delectus voluptatem impedit et hic ipsa quod possimus quia ut, explicabo omnis animi minima. Voluptate distinctio ducimus nostrum cupiditate doloribus rem?Lorem ipsum dolor sit amet consectetur, adipisicing elit. Qui delectus voluptatem impedit et hic ipsa quod possimus quia ut, explicabo omnis animi minima. Voluptate distinctio ducimus nostrum cupiditate doloribus rem?Lorem ipsum dolor sit amet consectetur, adipisicing elit. Qui delectus voluptatem impedit et hic ipsa quod possimus quia ut, explicabo omnis animi minima. Voluptate distinctio ducimus nostrum cupiditate doloribus rem?Lorem ipsum dolor sit amet consectetur, adipisicing elit. Qui delectus voluptatem impedit et hic ipsa quod possimus quia ut, explicabo omnis animi minima. Voluptate distinctio ducimus nostrum cupiditate doloribus rem?</p>
+            </section>
+
+            <section>
+                <img src="pict/undraw_about_us_page_re_2jfm.svg" alt="">
+                <p class="text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Qui delectus voluptatem impedit et hic ipsa quod possimus quia ut, explicabo omnis animi minima. Voluptate distinctio ducimus nostrum cupiditate doloribus rem?Lorem ipsum dolor sit amet consectetur, adipisicing elit. Qui delectus voluptatem impedit et hic ipsa quod possimus quia ut, explicabo omnis animi minima. Voluptate distinctio ducimus nostrum cupiditate doloribus rem?Lorem ipsum dolor sit amet consectetur, adipisicing elit. Qui delectus voluptatem impedit et hic ipsa quod possimus quia ut, explicabo omnis animi minima. Voluptate distinctio ducimus nostrum cupiditate doloribus rem?Lorem ipsum dolor sit amet consectetur, adipisicing elit. Qui delectus voluptatem impedit et hic ipsa quod possimus quia ut, explicabo omnis animi minima. Voluptate distinctio ducimus nostrum cupiditate doloribus rem?Lorem ipsum dolor sit amet consectetur, adipisicing elit. Qui delectus voluptatem impedit et hic ipsa quod possimus quia ut, explicabo omnis animi minima. Voluptate distinctio ducimus nostrum cupiditate doloribus rem?Lorem ipsum dolor sit amet consectetur, adipisicing elit. Qui delectus voluptatem impedit et hic ipsa quod possimus quia ut, explicabo omnis animi minima. Voluptate distinctio ducimus nostrum cupiditate doloribus rem?</p>
+            </section>
+        </main>
+
+        <footer class="site-footer">
+            <article class="first-column">
+                <h3>Полезни линкове</h3>
+
+                <div class="paragraphs-wrapper">
+                    <a href="#">Често задавани въпроси</a>
+                    <a href="#">Форум</p>
+                    <a href="#">Наръчник на програмиста</a>
+                    <a href="#">Професия Програмист</a>
+                    <a href="#">Професия Програмист</a>
+                    <a href="#">Професия Програмист</a>
+                    <a href="#">Професия Програмист</a>
+                </div>
+            </article>
+            <article class="second-column">
+                <h3>Всички инициативи</h3>
+
+                <div class="paragraphs-wrapper">
+                    <a href="#">SoftUni Digital</a>
+                    <a href="#">SoftUni Creative</a>
+                    <a href="#">SoftUni Kids</a>
+                    <a href="#">СофтУни БУДИТЕЛ</a>
+                    <a href="#">СофтУни БУДИТЕЛ</a>
+                    <a href="#">СофтУни БУДИТЕЛ</a>
+                    <a href="#">СофтУни БУДИТЕЛ</a>
+                </div>
+            </article>
+            <article class="third-column">
+                <h3>Компании партньори</h3>
+
+                <div class="paragraphs-wrapper">
+                    <a href="#">XS Software</a>
+                    <a href="#">СуперХостинг.БГ</a>
+                    <a href="#">SmartIT</a>
+                    <a href="#">Software Group</a>
+                    <a href="#">Software Group</a>
+                    <a href="#">Software Group</a>
+                    <a href="#">Software Group</a>
+                </div>
+            </article>
+
+            <article class="fourth-column">
+                <div class="footer-icons-wrapper">
+                    <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                </div>
+
+                <div class="footer-payment-media">
+                 <a href="#"><img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fcdn.freebiesupply.com%2Flogos%2Flarge%2F2x%2Fvisa-4-logo-png-transparent.png&f=1&nofb=1&ipt=0edb797a00ac8e5a639c4bf89b4f07e85d81106ab5abd5dbdc536c8d50b934b6&ipo=images" alt=""></a>
+                 <a href="#"><img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fcdn.freebiesupply.com%2Flogos%2Flarge%2F2x%2Fvisa-4-logo-png-transparent.png&f=1&nofb=1&ipt=0edb797a00ac8e5a639c4bf89b4f07e85d81106ab5abd5dbdc536c8d50b934b6&ipo=images" alt=""></a>
+                </div>
+
+                <p class="site-creation">&copy; 2013-2024 - Software University LTD - All Rights Reserved. 94851</p>
+                <p class="site-version">Software University Learning System 3.0.8818</p>
+            </article>
+        </footer>
+    </div>
+</body>
+</html>
+
