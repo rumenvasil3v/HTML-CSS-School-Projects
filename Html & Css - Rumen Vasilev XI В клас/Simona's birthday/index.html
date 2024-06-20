@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Happy+Monkey&display=swap');
+
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        *, *::after, *::before {
+            box-sizing: inherit;
+        }
+
+        html {
+            box-sizing: border-box;
+            font: 16px/1.5 "Happy Monkey", system-ui;
+        }
+
+        body {
+            font: inherit;
+            background: linear-gradient(45deg,rgb(83, 151, 219), rgb(234, 104, 246));
+        }
+
+        img {
+            display: block;
+            width: 100%;
+            height: auto;
+        }
+
+        .container {
+            max-width: 50em;
+            margin: 0 auto;
+            color: #ffffff;
+            text-shadow: 0 0 2px rgba(0, 0, 0, 0.9);
+        }
+
+        .main-content {
+            display: flex;
+            flex-direction: column;
+            gap: 1.4em;
+            align-items: center;
+        }
+
+        .media {
+            height: 10em;
+            width: 10em;
+            border: 8px solid #eeb0c9;
+            border-radius: 50%;
+            overflow: hidden;
+        }
+
+        .text {
+            display: flex;
+            flex-direction: column;                                                                                                                                                                                                                
+            align-items: center;
+            gap: 0.4em;
+        }
+
+        .text h3,
+        .text p {
+            background-color: #eeb0c9;
+            padding: 0.5em 1em;
+            border-radius: 8px;
+            letter-spacing: 0.1em;
+            font-weight: bold;
+        }
+
+        .gifts {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 2em;
+        }
+
+        .gifts-guide {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .media-gift-cover {
+            background-image: url('Birthday Gift Site/gift-cover.jpg');
+            background-size: cover;
+            width: 400px;
+            height: 400px;
+            border-radius: 0.4em;
+            border: 6px solid #fff;
+        }
+
+        .gift {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 0.7em;
+        }
+
+        #gift-image-happy:hover {
+            background: url('Birthday Gift Site/happy.webp');
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        #gift-image-hot:hover {
+            background: url('Birthday Gift Site/hot.webp');
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        #gift-image-genius:hover {
+            background: url('Birthday Gift Site/genius.webp');
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        #gift-image-cheers:hover {
+            background: url('Birthday Gift Site/cheers.webp');
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        #gift-image-badass:hover {
+            background: url('Birthday Gift Site/badass.webp');
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <section class="main-content">
+            <h1>Today is Simona's birthday🎉</h1>
+    
+            <div class="text">
+                <div class="media"><img src="Birthday Gift Site/girl-unsplash.jpg" /></div>
+                <h3>24 years old</h3>
+                <p>11.11.2024</p>
+            </div>
+
+            <div class="gifts">
+                <div class="gifts-guide">
+                    <h3>Here's how happy I am for you today.🎉</h3>
+                    <h3>(Hover over the image.)</h3>
+                </div>
+                <img onmouseenter="hoveringOverImage()" class="media-gift-cover" id="gift-image-happy">
+
+                <div class="gift">
+                    <h3>How people react when you enter the room.😍</h3>
+                    <img onmouseenter="hoveringOverImage()" class="media-gift-cover" id="gift-image-hot">
+                </div>
+                
+                <div class="gift">
+                    <h3>If I had to describe you with ONE word.👇</h3>
+                    <img onmouseenter="hoveringOverImage()" class="media-gift-cover" id="gift-image-genius">
+                </div>
+
+                <div class="gift">
+                    <h3>The only person as badass as you.💪</h3>
+                    <img onmouseenter="hoveringOverImage()" class="media-gift-cover" id="gift-image-cheers">
+                </div>
+
+                <div class="gift">
+                    <h3>This one's for you, my friend.🍻</h3>
+                    <img onclick="hoveringOverImage()" class="media-gift-cover" id="gift-image-badass">
+                </div>
+
+                <p>Want to learn more HTML and CSS? Take <a target="_blank" href="https://www.w3schools.com/">this course</a>.</p>
+            </div>
+        </section>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

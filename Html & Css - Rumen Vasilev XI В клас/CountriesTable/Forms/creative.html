@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Creative Degisn</title>
+    <link rel="stylesheet" href="creativeStyle.css">
+</head>
+
+<body>
+    <form action="#" method="post">
+
+        <fieldset>
+            <legend>Personal data:</legend>
+            <label for="name">Name:</label>
+            <input type="text" placeholder="Type your name..." required name="name" id="name">
+            <br>
+            <label for="gender">Gender:</label>
+            <input type="radio" value="Male" id="male" name="gender">
+            <label for="gender">Male</label>
+            <input type="radio" value="Female" id="female" name="gender">
+            <label for="gender">Female</label>
+            <input type="radio" value="Other" id="other" name="gender">
+            <label for="gender">Other</label>
+        </fieldset>
+
+        <!-- Информация за предпочитание -->
+        <fieldset>
+            <legend>Предпочитания:</legend>
+            <label for="favColour">Любими цветове:</label>
+            <input type="checkbox" id="red" name="colors" value="red">
+            <label for="red">Червен</label>
+            <input type="checkbox" id="green" name="colors" value="green">
+            <label for="green">Зелен</label>
+            <input type="checkbox" id="blue" name="colors" value="blue">
+            <label for="blue">Син</label>
+            
+            <br>
+
+            <label for="country">Държава:</label>
+            <select name="country" id="country">
+                <option value="bg">България</option>
+                <option value="zan">Занзибар</option>
+                <option value="shrila">Шри Ланка</option>
+                <option value="ru">Русия</option>
+                <option value="ukr">Украйна</option>
+                <option value="fr">Франция</option>
+                <option value="de">Германия</option>
+                <option value="pa">Пакистан</option>
+                <option value="al">Алжир</option>
+                <option value="chi">Китай</option>
+                <option value="new-zealand">Нова Зеландия</option>
+            </select>
+        </fieldset>
+
+        <!-- Additional Comments -->
+        <fieldset>
+            <legend>Допълнителни коментари</legend>
+            <label for="comments">Коментари:</label>
+            <br>
+            <textarea name="your-comments" id="comments" cols="50" rows="5" placeholder="Вашите коментари..."></textarea>
+        </fieldset>
+        <input type="submit" value="Изпрати">
+    </form>
+    
+</body>
+
+</html>

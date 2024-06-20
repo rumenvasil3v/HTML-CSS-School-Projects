@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&display=swap');
+
+       *, *::before, *::after {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            font: 16px/1.5 Verdana, Geneva, Tahoma, sans-serif;
+        }
+
+        body {
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+            justify-content: center;
+            background-color: #e6e6e6;
+            background-image: url('pictures/Mpf6PLNvCZ9I0AzSMQAjPvdB86Rlk90gCQEBJuYZ6q4.webp');
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+
+        img {
+            display: block;
+            width: 100%;
+            height: auto;
+        }
+
+        p {
+            text-align: center;
+            font-size: 1.2em;
+        }
+
+        a {
+            text-decoration: none;
+            text-transform: uppercase;
+            color: #000;
+        }
+
+        li {
+            list-style: none;
+        }
+
+        .card {
+            /* max-width: 26em;
+            border: 3px solid #00BFA6;
+            padding: 1em;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 3em;
+            border-radius: 1em;
+            box-shadow: 0px 0px 19px 0px rgba(0, 0, 0, 0.1); */
+        }
+
+        /* .button-wrapper {
+            display: flex;
+            flex-direction: column;
+            align-items: stretch;
+            width: 100%;
+            gap: 0.4em;
+        } */
+
+        /* .media {
+            max-width: 17em;
+        } */
+
+        .btn {
+            border-radius: 0.5em;
+            padding-block: 0.5em;
+            border: none;
+            cursor: pointer;
+        }
+
+        .btn.proceed {
+            background-color: #00BFA6;
+            color: #fff;
+            transition: all 0.2s ease-in-out;
+        }
+
+        .btn.proceed:hover {
+            background-color: #2f2e41;
+            color: #fff;
+        }
+
+        .btn.cancel {
+            background-color: #f0eaea;
+            color: #000000;
+            transition: all 0.2s ease-in-out;
+        }
+
+        .btn.cancel:hover {
+            background-color: #369;
+            color: #fff;
+        }
+
+        .card-header {
+            font-size: 2.4em;
+            color: #2f2e41;
+        }
+
+        .header-wrapper {
+            text-align: center;
+        }
+
+        /* .card.premium {
+            background-color: #00BFA6;
+        } */
+
+        /* .card.premium .btn.proceed {
+            background-color: #2f2e41;
+        }
+
+        .card.premium .btn.proceed:hover {
+            background-color: #cbc2c2c0;
+        } */
+
+        /* .card-main-content {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            gap: 4em;
+            justify-content: center;
+            background-color: #e6e6e6;
+            max-width: 100vw;
+            margin-top: 10em;
+        } */
+
+        .site-header {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            padding: 1.5em;
+            box-shadow: 0px 0px 19px 1px rgba(246, 164, 1, 0.7);
+            position: fixed;
+            top: 0; 
+            left: 0;
+            right: 0;
+            bottom: 92%;
+            z-index: 2;
+            background-color: #e6e6e6;
+            align-items: center;
+            background-color: rgb(255, 223, 162);
+        }
+
+       .navigation ul {
+            display: flex;
+            width: 40em;
+            justify-content: space-between;
+       }
+
+       .navigation ul li a {
+            font-weight: bold;
+            color: #2F2E41;
+            letter-spacing: 0.1em;
+       }
+
+       .site-title {
+            flex: 0 0 1em;
+            /* height: 0px; */
+       }
+
+       .site-title a {
+             /* height: 0px; */
+        }
+
+        .logo {
+            width: 200px;
+            position: relative;
+            top: 5px;
+            left: -40px;
+        } 
+
+        .site-footer {
+            background-color: rgb(255, 223, 162);
+            margin-top: auto;
+            box-shadow: 0px 0px 19px 1px rgba(246, 164, 1, 0.7);
+            display: flex;
+            justify-content: space-around;
+            padding: 1em;
+        }
+        
+        .first-portion-icons,
+        .second-portion-icons,
+        .third-portion-icons {
+            display: flex;
+            column-gap: 1em;
+        }
+
+        .section-icons {
+            display: flex;
+            flex-direction: column;
+            row-gap: 1em;
+        }
+
+        .footer-headers {
+            text-transform: none;
+            font-weight: 500;
+            color: #369;
+        }
+
+        .footer-headers:hover {
+            text-decoration: underline;
+            cursor: pointer;
+        }
+
+        .icons {
+           width: 2em;
+        }
+
+        .site-main {
+            margin-top: 30em;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: row;
+            flex-wrap: wrap;
+            padding: 2em;
+            flex: 1 0 auto;
+            max-width: 73em;
+            margin: 0 auto;
+            gap: 2em;
+        }
+
+        .site-main::after,
+        .site-main::before {
+            content: '';
+            flex: 0 0 17em;
+            order: 99999999;
+        }
+
+        .card {
+            /* max-width: 17em; */
+            flex: 0 0 17em;
+            display: flex;
+            flex-direction: column;
+            border: 1px solid rgb(170, 168, 168);
+            border-radius: 0.4em;
+            overflow: hidden;
+            background-color: #ccc;
+        }
+
+        .card .media {
+            /* max-width: 17em; */
+            /* padding: 0.2em; */
+            position: relative;
+        }
+
+        .content {
+            display: flex;
+            flex-direction: column;
+            flex: 0 0 100%;
+            padding: 0.4em 1em;
+        }
+
+        .corner-decoration.corner-left-top {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 2em;
+        }
+
+        .character-name {
+            font-family: "Caveat", cursive;
+            font-size: 2.0em;
+            text-align: center;
+        }
+
+        .content-text {
+            text-indent: 2.0em;
+        }
+    </style>
+</head>
+<body>
+    <header class="site-header">
+        <nav class="navigation">
+            <ul>
+                <li><a href="#">home</a></li>
+                <li><a href="#">lore</a></li>
+                <li><a href="#">actors</a></li>
+                <li><a href="#">heroes</a></li>
+                <li><a href="#">gallery</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="site-main">
+        <div class="card">
+            <div class="media">
+                <img src="pictures/martin-freeman-the-hobbit-photo.webp" alt="">
+            </div>
+            <div class="content">
+                <span class="character-name">Bilbo Beggins</span>
+                <span class="content-text">
+                    Bilbo Baggins is the title character and protagonist of J. R. R. Tolkien's 1937 novel The Hobbit.
+                </span>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="media">
+                <img src="pictures/martin-freeman-the-hobbit-photo.webp" alt="">
+            </div>
+            <div class="content">
+                <span class="character-name">Bilbo Beggins</span>
+                <span class="content-text">
+                    Bilbo Baggins is the title character and protagonist of J. R. R. Tolkien's 1937 novel The Hobbit.
+                </span>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="media">
+                <img src="pictures/martin-freeman-the-hobbit-photo.webp" alt="">
+            </div>
+            <div class="content">
+                <span class="character-name">Bilbo Beggins</span>
+                <span class="content-text">
+                    Bilbo Baggins is the title character and protagonist of J. R. R. Tolkien's 1937 novel The Hobbit.
+                </span>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="media">
+                <img src="pictures/martin-freeman-the-hobbit-photo.webp" alt="">
+            </div>
+            <div class="content">
+                <span class="character-name">Bilbo Beggins</span>
+                <span class="content-text">
+                    Bilbo Baggins is the title character and protagonist of J. R. R. Tolkien's 1937 novel The Hobbit.
+                </span>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="media">
+                <img src="pictures/martin-freeman-the-hobbit-photo.webp" alt="">
+            </div>
+            <div class="content">
+                <span class="character-name">Bilbo Beggins</span>
+                <span class="content-text">
+                    Bilbo Baggins is the title character and protagonist of J. R. R. Tolkien's 1937 novel The Hobbit.
+                </span>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="media">
+                <img src="pictures/martin-freeman-the-hobbit-photo.webp" alt="">
+            </div>
+            <div class="content">
+                <span class="character-name">Bilbo Beggins</span>
+                <span class="content-text">
+                    Bilbo Baggins is the title character and protagonist of J. R. R. Tolkien's 1937 novel The Hobbit.
+                </span>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="media">
+                <img src="pictures/martin-freeman-the-hobbit-photo.webp" alt="">
+            </div>
+            <div class="content">
+                <span class="character-name">Bilbo Beggins</span>
+                <span class="content-text">
+                    Bilbo Baggins is the title character and protagonist of J. R. R. Tolkien's 1937 novel The Hobbit.
+                </span>
+            </div>
+        </div>
+    </main>
+
+    <footer class="site-footer">
+        <section>
+            <a class="footer-headers">Our books</a>
+        </section>
+        <section>
+            <a class="footer-headers">Our sites</a>
+        </section>
+        <section>
+            <a class="footer-headers">Our action figures</a>
+        </section>
+        <section class="section-icons">
+            <div class="first-portion-icons">
+                <img src="pictures/icons8-leaf-of-lorien-50.png" class="icons" alt="">
+                <img src="pictures/icons8-one-ring.svg" class="icons" alt="">
+                <img src="pictures/icons8-one-ring (1).svg" class="icons" alt="">
+            </div>
+        </section>
+    </footer>
+</body>
+</html>

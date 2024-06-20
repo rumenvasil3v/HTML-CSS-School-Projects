@@ -1,0 +1,41 @@
+body {
+    background-color: aliceblue;
+}
+
+.offer section {
+    border: 1px solid #111;
+    background-color: aliceblue;
+    padding: 20px;
+    margin: 10px 15px;
+}
+
+.offer {
+    display: flex;
+    justify-content: space-around;
+    background-color:azure;
+    width: 600px;
+    margin: 0 auto;
+}
+
+.offer section button {
+    border: none;
+    padding: 10px;
+    color:brown;
+    background-color: bisque;
+    margin: 0 auto;
+    cursor: pointer;
+    width: 200px;
+    text-align: center;
+}
+
+header h1 {
+    text-align: center;
+}
+
+.offer ul li {
+    font-size: 1.2em;
+}
+
+.offer h2 {
+    font-size: 1.8em;
+}

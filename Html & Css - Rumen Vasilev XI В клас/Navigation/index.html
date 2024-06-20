@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navigation</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        li {
+            display: inline;
+        }
+
+        a {
+            text-decoration: none;
+            color: #097f8c;
+        }
+
+        img {
+            display: block;
+            width: 100%;
+            height: auto;
+        }
+
+        .site-header {
+            display: flex;
+            justify-content: space-between;
+            padding: 1em 2em;
+            background-color: #f0f0c9;
+            align-items: center;
+        }
+
+        .navigation ul {
+            display: flex;
+            width: 20em;
+            justify-content: space-around;
+            background-color: #fcfcdb;
+        }
+
+        .navigation ul li {
+            padding: 0.4em 1em;            
+        }
+
+        /* .site-title a {
+            width: 4em;
+        } */
+
+        .logo-media {
+            width: 3em;
+        }
+
+    </style>
+</head>
+<body>
+    <header class="site-header">
+        <p class="site-title">
+            <a href="#"><img class="logo-media" src="the-lord-of-the-rings-2.svg" alt=""></a>
+        </p>
+
+        <nav class="navigation">
+            <ul>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact</a></li>
+                <li><a href="#">Blog</a></li>
+            </ul>
+        </nav>
+    </header>
+</body>
+</html>

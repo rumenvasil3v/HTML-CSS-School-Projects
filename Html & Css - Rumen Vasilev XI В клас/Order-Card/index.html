@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *, *::before, *::after {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            font: 16px/1.5 Verdana, Geneva, Tahoma, sans-serif;
+        }
+
+        body {
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+            justify-content: center;
+            background-color: #e6e6e6;
+        }
+
+        img {
+            display: block;
+            width: 100%;
+            height: auto;
+        }
+
+        p {
+            text-align: center;
+            font-size: 1.2em;
+        }
+
+        a {
+            text-decoration: none;
+            text-transform: uppercase;
+            color: #000;
+        }
+
+        li {
+            list-style: none;
+        }
+
+        .card {
+            max-width: 26em;
+            border: 3px solid #00BFA6;
+            padding: 1em;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 3em;
+            border-radius: 1em;
+            box-shadow: 0px 0px 19px 0px rgba(0, 0, 0, 0.1);
+        }
+
+        .button-wrapper {
+            display: flex;
+            flex-direction: column;
+            align-items: stretch;
+            width: 100%;
+            gap: 0.4em;
+        }
+
+        .media {
+            max-width: 17em;
+        }
+
+        .btn {
+            border-radius: 0.5em;
+            padding-block: 0.5em;
+            border: none;
+            cursor: pointer;
+        }
+
+        .btn.proceed {
+            background-color: #00BFA6;
+            color: #fff;
+            transition: all 0.2s ease-in-out;
+        }
+
+        .btn.proceed:hover {
+            background-color: #2f2e41;
+            color: #fff;
+        }
+
+        .btn.cancel {
+            background-color: #f0eaea;
+            color: #000000;
+            transition: all 0.2s ease-in-out;
+        }
+
+        .btn.cancel:hover {
+            background-color: #369;
+            color: #fff;
+        }
+
+        .card-header {
+            font-size: 2.4em;
+            color: #2f2e41;
+        }
+
+        .header-wrapper {
+            text-align: center;
+        }
+
+        .card.premium {
+            background-color: #00BFA6;
+        }
+
+        .card.premium .btn.proceed {
+            background-color: #2f2e41;
+        }
+
+        .card.premium .btn.proceed:hover {
+            background-color: #cbc2c2c0;
+        }
+
+        .card-main-content {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            gap: 4em;
+            justify-content: center;
+            background-color: #e6e6e6;
+            max-width: 100vw;
+            margin-top: 10em;
+        }
+
+        .site-header {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            padding: 1.5em;
+            box-shadow: 0px 0px 19px 1px rgba(246, 164, 1, 0.7);
+            position: fixed;
+            top: 0; 
+            left: 0;
+            right: 0;
+            bottom: 92%;
+            z-index: 2;
+            background-color: #e6e6e6;
+            align-items: center;
+            background-color: rgb(255, 223, 162);
+        }
+
+       .navigation ul {
+            display: flex;
+            width: 40em;
+            justify-content: space-around;
+       }
+
+       .navigation ul li a {
+            font-weight: bold;
+            color: #2F2E41;
+            letter-spacing: 0.1em;
+       }
+
+       .site-title {
+            flex: 0 0 1em;
+            /* height: 0px; */
+       }
+
+       .site-title a {
+             /* height: 0px; */
+        }
+
+        .logo {
+            width: 200px;
+            position: relative;
+            top: 5px;
+            left: -40px;
+        }
+
+        /* .logo:before {
+            display: inline-block;
+            width: 16px;
+            height: 16px;
+            margin-right: 5px;
+            content: "";
+            background: url("icons/geogebra.ico") no-repeat 0 0;
+            background-size: 100%;
+        } */
+    </style>
+</head>
+<body>
+    <header class="site-header">
+        <p class="site-title">
+            <a href="#">
+                <img class="logo" src="images/stock-vector-letter-grow-logo-design-linear-creative-minimal-monogram-symbol-universal-elegant-vector-logotype-1990696781-removebg-preview.png" alt="">
+            </a>
+        </p>
+
+        <nav class="navigation">
+            <ul>
+                <li><a href="#">get started</a></li>
+                <li><a href="#">pricing</a></li>
+                <li><a href="#">enterprise</a></li>
+                <li><a href="#">resources</a></li>
+                <li><a href="#">blog</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="card-main-content">
+        <section class="card basic">
+            <div class="media"><img src="images/undraw_profile_data_re_v81r.svg" alt=""></div>
+            <div class="header-wrapper">
+                <h1 class="card-header">Order summary</h1>
+                <h1 class="card-header">Basic</h1>
+            </div>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad tenetur numquam eius earum quod alias cumque voluptates laborum accusamus.</p>
+            <div class="button-wrapper">
+                <button class="btn proceed">Proceed to payment</button>
+                <button class="btn cancel">Cancel Order</button>
+            </div>
+        </section>
+
+        <section class="card premium">
+            <div class="media"><img src="images/undraw_profile_data_re_v81r.svg" alt=""></div>
+            <div class="header-wrapper">
+                <h1 class="card-header">Order summary</h1>
+                <h1 class="card-header">Premium</h1>
+            </div>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad tenetur numquam eius earum quod alias cumque voluptates laborum accusamus.</p>
+            <div class="button-wrapper">
+                <button class="btn proceed">Proceed to payment</button>
+                <button class="btn cancel">Cancel Order</button>
+            </div>
+        </section>
+
+        <section class="card standart">
+            <div class="media"><img src="images/undraw_profile_data_re_v81r.svg" alt=""></div>
+            <div class="header-wrapper">
+                <h1 class="card-header">Order summary</h1>
+                <h1 class="card-header">Standart</h1>
+            </div>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad tenetur numquam eius earum quod alias cumque voluptates laborum accusamus.</p>
+            <div class="button-wrapper">
+                <button class="btn proceed">Proceed to payment</button>
+                <button class="btn cancel">Cancel Order</button>
+            </div>
+        </section>
+    </main>
+
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Doloribus, praesentium.</p>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Doloribus, praesentium.</p>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Doloribus, praesentium.</p>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Doloribus, praesentium.</p>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Doloribus, praesentium.</p>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Doloribus, praesentium.</p>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Doloribus, praesentium.</p>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Doloribus, praesentium.</p>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Doloribus, praesentium.</p>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Doloribus, praesentium.</p>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Doloribus, praesentium.</p>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Doloribus, praesentium.</p>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Doloribus, praesentium.</p>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Doloribus, praesentium.</p>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Doloribus, praesentium.</p>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Doloribus, praesentium.</p>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Doloribus, praesentium.</p>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Doloribus, praesentium.</p>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Doloribus, praesentium.</p>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Doloribus, praesentium.</p>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Doloribus, praesentium.</p>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Doloribus, praesentium.</p>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Doloribus, praesentium.</p>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Doloribus, praesentium.</p>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Doloribus, praesentium.</p>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Doloribus, praesentium.</p>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Doloribus, praesentium.</p>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Doloribus, praesentium.</p>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Doloribus, praesentium.</p>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Doloribus, praesentium.</p>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Doloribus, praesentium.</p>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Doloribus, praesentium.</p>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Doloribus, praesentium.</p>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Doloribus, praesentium.</p>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Doloribus, praesentium.</p>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Doloribus, praesentium.</p>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Doloribus, praesentium.</p>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Doloribus, praesentium.</p>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Doloribus, praesentium.</p>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Doloribus, praesentium.</p>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Doloribus, praesentium.</p>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Doloribus, praesentium.</p>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Doloribus, praesentium.</p>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Doloribus, praesentium.</p>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Doloribus, praesentium.</p>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Doloribus, praesentium.</p>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Doloribus, praesentium.</p>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Doloribus, praesentium.</p>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Doloribus, praesentium.</p>
+</body>
+</html>
+
+<!-- #00BFA6 -->

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cards</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        h3 {
+            background-color: rgb(41, 149, 126);
+            color: white;
+            padding: 0.3em 0.8em;
+            margin-block-end: 1em;
+        }
+
+        .list {
+            max-width: 32em;
+            padding: 2em;
+            display: flex;
+            gap: 2em;
+            flex-direction: row;
+            flex-wrap: wrap;
+            background-color: rgb(189, 255, 255);
+            justify-content: center;
+            align-items: flex-start;
+        }
+
+        .card {
+            background-color: white;
+            flex: 0 0 7em;
+            padding: 1em;
+            box-shadow: 0 0 12px 0px rgba(0, 0, 0, 0.2);
+        }
+    </style>
+</head>
+<body>
+    <section class="list">
+        <section class="card">
+            <h3>A Blog Post</h3>
+            <p>Some excerpt text enticing you to want to read more...</p>
+        </section>
+
+        <section class="card">
+            <h3>Another Post</h3>
+            <p>Some really interesting excerpt text...</p>
+        </section>
+
+        <section class="card">
+            <h3>A Third Cool Post</h3>
+            <p>A whole bunch of super intriguing text that makes you really, really want to click through to read more...</p>
+        </section>
+    </section>
+</body>
+</html>

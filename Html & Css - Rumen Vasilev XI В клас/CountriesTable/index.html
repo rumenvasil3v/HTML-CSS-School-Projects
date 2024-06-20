@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Countries</title>
+    <style>
+body {
+    background: wheat;
+    display: flex;
+    justify-content: center;
+}
+
+
+        img {
+            max-width: 50px;
+            align-items: center;
+        }   
+
+        table {
+            margin-top: 50px;
+
+            border-collapse: collapse;
+        }
+
+        th, td {
+            border: 1px solid blue;
+            text-align: center;
+            padding-left: 200px;
+            padding-right: 200px;
+        }   
+
+        td {
+            
+        }
+        
+        thead {
+            background-color: antiquewhite;
+        }
+
+        tr:nth-child(even) {
+            background-color:aliceblue;
+        }
+    </style>
+</head>
+<body>
+    <section>
+        <table>
+            <thead>
+                <th>County name</th>
+                <th>County flags</th>
+                <th>County Population</th>
+            </thead>
+            <tr>
+                <td>Bulgaria</td>
+                <td><img src = "images/1-500x554.png"></td>
+                <td><em>6.878 million</em></td>
+            </tr>
+            <tr>
+                <td>USA</td>
+                <td><img src = "images/usa flag.png"></td>
+                <td><em>331.9 million</em></td>
+            </tr>
+            <tr>
+                <td>France</td>
+                <td><img src = "images/france flag.png"></td>
+                <td><em>67.75 million</em></td>
+            </tr>
+        </table>
+    </section>
+</body>
+</html>

@@ -1,0 +1,265 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+html {
+    font: 14px/1.5 "Open Sans", sans-serif;
+    box-sizing: border-box;
+}
+
+*, *::after, *::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+body, table, button, input {
+    font: inherit;
+}
+
+img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+h1 { font-size: 2.4em; }
+h2 { font-size: 2.0em; }
+h3 { font-size: 1.6em; }
+h4 { font-size: 1.4em; }
+h5 { font-size: 1.2em; }
+h6 { font-size: 1.0em; }
+
+h1, h2, h3, h4, h5, h6 {
+    line-height: 1.2;
+}
+
+p {
+    padding-block-end: 1.2em;
+}
+
+.site-header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    /* box-shadow: 0 0 19px 1px rgba(0, 0, 0, 0.6); */
+}
+
+.site-title {
+    flex: 0 0 13em;
+    padding: 0;
+    cursor: pointer;
+}
+
+.navigation {
+    display: flex;
+    gap: 3em;
+    margin-top: -2em;
+}
+
+.navigation li {
+    list-style: none outside;
+}
+
+.navigation a {
+    text-decoration: none;
+    color: #031b56;
+    font-size: 1.4em;
+    transition: all 0.1s ease-in;
+}
+
+.navigation a:hover {
+    color: #369;
+}
+
+.site-main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.main-section {
+    display: flex;
+    flex-direction: row;
+    gap: 1em;
+    justify-content: center;
+}
+
+.main-section-content {
+    flex: 0 0 27em;
+    padding-block-start: 5em;
+    display: flex;
+    gap: 1em;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.main-section-media {
+    flex: 0 0 45%;
+}
+
+.section-paragraph {
+    text-align: justify;
+    line-height: 2.0;
+}
+
+.section-header {
+    color: #FF8880;
+    font-size: 3em;
+    text-transform: uppercase;
+}
+
+.section-subheader {
+    color: #4244E6;
+    text-transform: uppercase;
+    letter-spacing: 12px;
+    font-weight: normal;
+}
+
+.section-button {
+    padding: 0.5em 1em;
+    background-color: #FF8880;
+    border: none;
+    color: #fff;
+    text-transform: uppercase;
+    border-radius: 0.5em;
+    width: 22em;
+    font-weight: bold;
+    transition: all 0.2s ease;
+    cursor: pointer;
+    letter-spacing: 1px;
+}
+
+.section-button:hover {
+    background-color: #4244E6;
+}
+
+.site-footer {
+    background-color: #031b56;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2.5em;
+    padding: 2em 0em;
+    margin-block-start: 3em;
+}
+
+.footer-list {
+    display: flex;
+    gap: 4em;
+}
+
+.footer-list li {
+    list-style-type: none;
+}
+
+.footer-list a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.service-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5em;
+}
+
+.service-section h3 {
+    color: #031b56;
+}
+
+.service-content {
+    display: flex;
+    justify-content: center;
+    gap: 5em;
+    width: 100%;
+}
+
+.service h3 {
+    color: #fff;
+}
+
+.service-media {
+    /* margin-left: -23em; */
+}
+
+.services-list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 1em;
+    align-content: center;
+    width: 30em;
+    justify-content: center;
+}
+
+.service {
+    width: 14em;
+    height: 13em;
+    display: flex;
+    flex-direction: column;
+    border-radius: 0.6em;
+    align-items: center;
+    justify-content: center;
+    background-color: #FF8880;
+    gap: 0.8em;
+    transition: all 0.2s ease-in;
+}
+
+.team-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2em;
+}
+
+.team-section-list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 2em;
+    justify-content: center;
+}
+
+.team-section-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.team-section-media {
+    width: 20em;
+}
+
+.team-section-card {
+    flex: 0 0 27em;
+    background-color: #E3EAFD;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 0.4em;
+}
+
+.team-section-header {
+    color: #3E42F1;
+}
+
+.team-section-content-header {
+    color: #FF8A81;
+    text-shadow: 0px 0px 1.4px rgba(0, 0, 0);
+}
+
+.team-section-content-vacancy {
+    color: #3E42F1;
+    font-weight: bold;
+}
+
+.service:hover {
+    transform: scale(1.1);
+}

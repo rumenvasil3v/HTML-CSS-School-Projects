@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fun Project</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+
+        html {
+            font: 14px/1.5 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
+        }
+
+        body, input, button, table {
+            font: inherit;
+        }
+
+        body {
+            display: flex;
+            flex-direction: column;
+            gap: 2em;
+        }
+
+        .site-header {
+            background-color: #336699;
+            padding: 2em 0em;
+            color: #fff;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 1.2em;
+        }
+
+        .heading {
+            font-weight: bold;
+        }
+
+        .section {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 1.4em;
+        }
+
+        .the-witcher.section {
+            padding-block-end: 4em;
+        }
+
+        .list {
+            display: flex;
+            gap: 1.8em;
+            justify-content: center;
+        }
+
+        .card {
+            flex: 0 0 12em;
+            height: 160px;
+            border-radius: 0.7em;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        .star-wars.card {
+            background-color: rgb(251, 230, 8);
+        }
+
+        .lord-of-the-rings.card {
+            background-color: #336699;
+        }
+
+        .the-witcher.card {
+            background-color: #FF6666;
+        }
+
+        .luke:hover {
+            background-image: url('images/star-wars-images/swbf2-refresh-hero-large-heroes-page-luke-skywalker-16x9-xl.jpg.adapt.crop1x1.320w.jpg');
+        }
+
+        .vader:hover {
+            background-image: url('images/star-wars-images/58f02dda8c76f104f886d559f3d481d2.jpg');
+        }
+
+        .anakin:hover {
+            background-image: url('images/star-wars-images/Anakin_Skywalker_Lightsaber_1.webp');
+        }
+
+        .bilbo:hover {
+            background-image: url('images/lorf-of-the-rings-images/The_Hobbit_wallpaper_48.webp');
+        }
+
+        .frodo:hover {
+            background-image: url('images/lorf-of-the-rings-images/FrodoBaggins3.webp');
+        }
+
+        .gandalf:hover {
+            background-image: url('images/lorf-of-the-rings-images/Gandalf.jpeg');
+        }
+
+        .gerald:hover {
+            background-image: url('images/the-witcher-images/images.jpg');
+        }
+
+        .yennefer:hover {
+            background-image: url('images/the-witcher-images/qc01deu874b31.jpg');
+        }
+
+        .ciri:hover {
+            background-image: url('images/the-witcher-images/world-you-be-happy-to-play-as-cirilla-in-the-next-witcher-v0-998w0klvie8a1.webp');
+        }
+    </style>
+</head>
+<body>
+    <header class="site-header">
+        <h1 class="heading">Welcome to the Fun Project!🤡</h1>
+        <p>Let's explore some cool stuff together!</p>
+    </header>
+
+    <section class="star-wars section">
+        <h2>Star Wars Section 🌍</h2>
+
+        <div class="start-wars-list list">
+            <div class="star-wars card luke"></div>
+            <div class="star-wars card vader"></div>
+            <div class="star-wars card anakin"></div>
+        </div>
+    </section>
+
+    <section class="lord-of-the-rings section">
+        <h1 class="heading">Lord of The Rings Section 🌗</h1>
+
+        <div class="lord-of-the-rings-list list">
+            <div class="lord-of-the-rings card frodo"></div>
+            <div class="lord-of-the-rings card bilbo"></div>
+            <div class="lord-of-the-rings card gandalf"></div>
+        </div>
+    </section>
+
+    <section class="the-witcher section">
+        <h1 class="heading">The Witcher Section 🧹</h1>
+
+        <div class="the-witcher-list list">
+            <div class="the-witcher card gerald"></div>
+            <div class="the-witcher card yennefer"></div>
+            <div class="the-witcher card ciri"></div>
+        </div>
+    </section>
+</body>
+</html>

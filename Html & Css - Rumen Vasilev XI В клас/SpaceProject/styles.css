@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;800&display=swap');
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css');
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font: 1px/1.5 'Orbitron', sans-serif;
+    color: #82a5ca;
+    text-align: center;
+    text-shadow: 0 0 0 0.5em black;
+}
+
+h1 { font-size: 2.8rem; }
+h2 { font-size: 2.4rem; }
+h3 { font-size: 2.0rem; }
+h4 { font-size: 1.6rem; }
+h5 { font-size: 1.2rem; }
+h6 { font-size: 1.0rem; }
+
+.site-header, .site-footer {
+    background-color: gray;
+    color: #fff;
+    text-align: center;
+    padding: 1.2em 0 1.2em 0;
+    font-size: 1rem;
+}
+
+.site-main {
+    background-image: url('images/galaxy.gif');
+    background-size: cover;
+    color: #82a5ca;
+    height: 100vh;
+}
+
+.site-main .btn {
+    padding: 0.5em 3em 0.5em 3em;
+    font-size: 1rem;
+    background-color:#82a5ca;
+    color: white;
+    border: none;
+    border-radius: 12px;
+}
+
+.main-logo {
+    width: 200px;
+}
+
+.main_container {
+    position: relative;
+    top: 200px;
+}
+
+.main_container {
+    padding: 1em 6em;
+    font-size: 1rem;
+}
+
+.main_container * {
+    padding: 0.2em 0;
+    /* font-size: 1rem; */
+}
