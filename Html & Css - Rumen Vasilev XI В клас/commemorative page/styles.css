@@ -1,0 +1,429 @@
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Style+Script&display=swap');
+
+*, *::before, *::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font: 16px/1.2 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    line-height: 1.5;
+}
+
+h1 { font-size: 2.8em; }
+h2 { font-size: 2.0em; }
+h3 { font-size: 1.6em; }
+h4 { font-size: 1.3em; }
+h5 { font-size: 0.9em; }
+h6 { font-size: 0.5em; }
+
+.site-header {
+    display: flex;
+    background-color: #FFF;
+    padding: 1.2em 0 0.3em 0;
+    justify-content: space-around;
+    align-items: center;
+    color: rgb(134, 185, 134);
+    font-weight: bold;
+    box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.3);
+    position: fixed;    
+    top: 0;
+    left: 0;
+    right: 0;
+}
+
+.logo-image {
+    width: 4em;
+}
+
+.navigation ul {
+    display: flex;
+    justify-content: space-between;
+    width: 23em;
+    list-style-type: none;
+}
+
+.navigation ul li {
+    cursor: pointer;
+}
+
+.navigation ul li a {
+    text-decoration: none;
+    color: rgb(170, 168, 168);
+}
+
+.search-bar {
+    padding: 1em 0.5em 1em;
+    border-radius: 2em;
+    border-color:#EFEDCC;
+    border-width: 0;
+    outline: none;
+    box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.3)
+}
+
+.banner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #A1C1DD;
+    color: #fff;
+}
+
+.banner h3 {
+    font-size: 1.2em;
+}
+
+.banner-image img {
+    width: 50em;
+}
+
+.banner-information {
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.fa-regular.fa-heart {
+    font-size: 1.0em;
+    padding-right: 0.2em;
+}
+
+.fa-solid.fa-message {
+    font-size: 1.0em;
+    padding-right: 0.2em;
+}
+
+.biography-media img {
+    background-color: rgb(194, 196, 196);
+    padding: 0.5em;
+    border: 12px black solid;
+}
+
+.biography {
+    color: #434546;
+    display: flex;
+    flex-direction: row;
+    gap: 2em;
+}
+
+.site-main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 4em;
+}
+
+.site-footer {
+    padding: 3em 0 3em;
+    color: #fff;
+    display: flex;
+    justify-content: space-around;
+    background-color: #193047;
+}
+
+.site-footer h3 {
+    font-weight: bold;
+    font-size: 1.4em;
+    padding-bottom: 0.3em;
+    color: #fff;
+}
+
+.first-footer
+.second-footer,
+.third-footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.first-footer p,
+.second-footer p,
+.third-footer p {
+    font-size: 1.1em;
+    padding-bottom: 0.3em;
+}
+/* font-family: "Roboto", sans-serif; */
+.third-footer div {
+    font-size: 1.9em;
+}
+
+ .main-about > div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 10em;
+ }
+
+.main-about {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+ }
+
+ .biography-section {
+    display: flex;
+    flex-direction: row;
+    width: 85%;
+    gap: 2em;
+    align-items: flex-start;
+    box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.3);
+    margin-bottom: 3em;
+ }
+
+ .biography-section img {
+    width: 23em;
+    max-height: 100%;
+ }
+
+ .biography-information {
+    font-family: "Roboto", sans-serif;
+    text-align: justify;
+    padding: 2em;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+ }
+
+ .biography-information button {
+    align-self: flex-end;
+    margin-top: 2.3em;
+    color: rgb(194, 194, 194);
+    border: 1px solid rgb(189, 189, 189);
+    padding: 0.5em 1em 0.5em;
+    background-color: #fff;
+    font-weight: bold;
+    cursor: pointer;
+ }
+
+ .biography-information h3 {
+    padding-bottom: 0.8em;
+    font-family: "Style Script", cursive;
+    color: rgb(170, 168, 168);
+ }
+
+ .biography-information p {
+    letter-spacing: 1px;
+ }
+
+ .rising-media {
+    height: 17em;
+ }
+
+ .biography-media {
+    width: 13em;
+ }
+
+ .biography-button {
+    margin-top: 12em;
+ }
+
+ .experience-media {
+    height: 18em;
+ }
+
+ .petar-aladzhov-information {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    gap: 3em;
+    margin-bottom: 6em;
+ }
+
+ .petar-aladzhov-information h3 {
+    font-family: "Style Script", cursive;
+    color: rgb(170, 168, 168);
+    text-align: center;
+ }
+
+ .petar-aladzhov-information {
+    font-family: "Roboto", sans-serif;
+    text-align: justify;
+ }
+
+ .petar-aladzhov-information div {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+ }
+
+ .main-blog h1,
+ .main-blog h2,
+ .main-blog h3,
+ .main-blog h4,
+ .main-blog h5,
+ .main-blog h6 {
+    font-family: "Style Script", cursive;
+    color: rgb(170, 168, 168);
+ }
+
+ .main-blog {
+    margin-top: 12em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: "Roboto", sans-serif;
+    text-align: justify;
+ }
+
+ .main-blog article {
+    width: 80%;
+    display: flex;
+    gap: 2em;
+ }
+
+
+ .ekaterina-media {
+    width: 24em;
+ }
+
+ .poster {
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+ }
+
+ .main-section {
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+    flex: 0 0 60%;
+    padding-right: 2em;
+    border-right: 1px solid #cbcbcb;
+    margin-bottom: 3em;
+ }
+
+ .second-section {
+    flex: 0 0 40%;
+ }
+
+ .avatar {
+    display: flex;
+    align-items: center;
+    gap: 0.3em;
+    margin-bottom: 1em;
+ }
+
+ .forgotten {
+    width: 10em;
+ }
+
+ .second-section {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+ }
+
+ .forgotten-text {
+    display: flex;
+    flex-direction: column;
+ }
+
+ .forgotten-section {
+    display: flex;
+    gap: 2em;
+ }
+
+ .contacts-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 12em;
+    margin-bottom: 17em;
+ }
+ 
+
+ /* From Uiverse.io by guilhermeyohan */ 
+.subscribe {
+    position: relative;
+    height: 140px;
+    width: 240px;
+    padding: 20px;
+    background-color: #FFF;
+    border-radius: 4px;
+    color: #333;
+    box-shadow: 0px 0px 60px 5px rgba(0, 0, 0, 0.4);
+  }
+  
+  .subscribe:after {
+    position: absolute;
+    content: "";
+    right: -10px;
+    bottom: 18px;
+    width: 0;
+    height: 0;
+    border-left: 0px solid transparent;
+    border-right: 10px solid transparent;
+    border-bottom: 10px solid #1a044e;
+  }
+  
+  .subscribe p {
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+    letter-spacing: 4px;
+    line-height: 28px;
+  }
+  
+  .subscribe input {
+    position: absolute;
+    bottom: 30px;
+    border: none;
+    border-bottom: 1px solid #d4d4d4;
+    padding: 10px;
+    width: 82%;
+    background: transparent;
+    transition: all .25s ease;
+  }
+  
+  .subscribe input:focus {
+    outline: none;
+    border-bottom: 1px solid #0d095e;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', 'sans-serif';
+  }
+  
+  .subscribe .submit-btn {
+    position: absolute;
+    border-radius: 30px;
+    border-bottom-right-radius: 0;
+    border-top-right-radius: 0;
+    background-color: #0f0092;
+    color: #FFF;
+    padding: 12px 25px;
+    display: inline-block;
+    font-size: 12px;
+    font-weight: bold;
+    letter-spacing: 5px;
+    right: -10px;
+    bottom: -20px;
+    cursor: pointer;
+    transition: all .25s ease;
+    box-shadow: -5px 6px 20px 0px rgba(26, 26, 26, 0.4);
+  }
+  
+  .subscribe .submit-btn:hover {
+    background-color: #07013d;
+    box-shadow: -5px 6px 20px 0px rgba(88, 88, 88, 0.569);
+  }
+
+  .my-form {
+    display: flex;
+    gap: 3em;
+    align-items: center;
+  }
+
+  .contacts-body {
+    background-image: url('images/спги.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
