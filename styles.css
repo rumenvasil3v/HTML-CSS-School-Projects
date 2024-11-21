@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&family=Style+Script&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Style+Script&display=swap');
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css');
+
+*, *::after, *::before {
+    margin: 0;
+    padding: 0;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    box-sizing: inherit;
+    font-size: 62.5%;
+}
+
+body {
+    font-family: "PT Serif", serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    line-height: 1.5;
+}
+
+h1 { font-size: 3.0em; }
+h2 { font-size: 2.6em; }
+h3 { font-size: 2.2em; }
+h4 { font-size: 1.8em; }
+h5 { font-size: 1.4em; }
+h6 { font-size: 1.0em; }
+
+#header {
+    padding: 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 1px 1px 15px black;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+}
+
+#header section:nth-child(2) a {
+    position: relative;
+}
+
+#header section:nth-child(2) a:nth-child(1).active::before {
+    content: "";
+    position: absolute;
+    border-bottom: 2px solid (122, 122, 122);
+    width: 40%;
+    bottom: -4px;
+}
+
+#header section:nth-child(2) a::before {
+    position: absolute;
+    content: "";
+    border: 2px solid (122, 122, 122);
+    width: 0%;
+    bottom: -4px;
+    transition: width 0.1s;
+}
+
+
+
+.header-buttons {
+    border: none;
+    background-color: transparent;
+    font-size: 20px;
+    align-items: center;
+    margin-right: 30px;
+    text-decoration: none;
+    color: black;
+}
+
+.site-main {
+    padding-top: 24em;
+    display: flex;
+    gap: 3em;
+    justify-content: center;
+    align-items: center;
+}
+
+.collection {
+    max-width: 57em;
+    flex-basis: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.collection-header {
+    font-size: 4.3em;
+}
+
+.collection-information {
+    font-size: 2.0em;
+}
+
+.collection-types {
+    max-width: 45em;
+    flex-basis: 50%;
+}
